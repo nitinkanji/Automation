@@ -25,7 +25,7 @@
 
 #Connecting to Target server
 
-$Pass = "**********" | ConvertTo-SecureString -AsPlainText -Force; $Account='redmond\lpoaasvc'
+$Pass = "**********" | ConvertTo-SecureString -AsPlainText -Force; $Account='domain\account'
 $credential = [System.Management.Automation.PSCredential]::new($Account, $Pass)
 
 $TargetServer = ('ph1mslwb49.partners.extranet.microsoft.com','ph1mslwb49.partners.extranet.microsoft.com','ph1mslwb49.partners.extranet.microsoft.com')
