@@ -26,8 +26,8 @@ Function ExecuteSqlQuery {
             return $Dataset.Tables[0] 
         }  
 
-$DBServer =  'CO1OEMPSQLOA5.partners.extranet.microsoft.com' # 'OEMPSQLRPTL.partners.extranet.microsoft.com'
-$Account  = 'northamerica\pdoaprd'#'northamerica\pdoaprm' #, Northamerica\pdoacbr, Northamerica\pdoartn, northamerica\pdoadoc, Northamerica\pdoaprd
+$DBServer =  'server1' # 
+$Account  = 'domain\account1'
 $DB = 'Provisioning' #ProvisioningDS, Instrumentation, Configuration, MSDB
 
 $QueryCreateLogin = "CREATE LOGIN [$($Account)] FROM WINDOWS;"; $Result = ExecuteSqlQuery -Query $QueryCreateLogin -Server $DBServer 
