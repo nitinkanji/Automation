@@ -21,7 +21,7 @@ Foreach($ac in $accounts)
     If($ac.SERVICEACCOUNT)
     {
         $LDAP = DomainCheck -name ($($ac.SERVICEACCOUNT).Split("\")[0])
-        $Domain = NEW-OBJECT SYSTEM.DIRECTORYSERVICES.DIRECTORYENTRY("LDAP://DC=partners,DC=extranet,DC=microsoft,DC=com",'partners\tpisvc0577','#729evLX3rFfT}')
+        $Domain = NEW-OBJECT SYSTEM.DIRECTORYSERVICES.DIRECTORYENTRY("LDAP://DC=partners,DC=extranet,DC=microsoft,DC=com",'domain\account','*********')
         
             if($Domain.name -NE $null){$status = "Valid"}
             else {$status = "Invalid"}
