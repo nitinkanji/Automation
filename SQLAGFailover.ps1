@@ -40,7 +40,7 @@ $AGFailover =
                  }
                 else{$flagValue =1}
         
-        Return $flagValue
+        Return  $flagValue
 
      }
 
