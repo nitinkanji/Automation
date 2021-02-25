@@ -1,15 +1,3 @@
-﻿# *************************************************************
-# * Windows Update Agent Patching Script
-# *
-# * @Description: This script is for Microsoft Patching Automation Tool Team
-# *
-# * @Author:      Peng Di
-# * 
-# * @Email:       dipeng@microsoft.com
-# * 
-# * @Last Update: 2017/Aug/17
-# *************************************************************
-
 # This script generates logs and return code in C:\wsuslog\
 
 # *******************Return Code*******************************
