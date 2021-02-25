@@ -1,19 +1,12 @@
 ﻿#  AUTHOR: Nitin Gupta [nitinkg@microsoft.com]
 #  DESCRIPTION : Check Web & App Server LoadBalancer Status and make changes if needed.
 
-$Pass = "*************" | ConvertTo-SecureString -AsPlainText -Force; $Account='redmond\lpoaasvc'
+$Pass = "*************" | ConvertTo-SecureString -AsPlainText -Force; $Account='domain\account'
 $credential = [System.Management.Automation.PSCredential]::new($Account, $Pass)
 $Details=@($null)
 
 $Servers = (
-'I07OPDFOAWEB1.partners.extranet.microsoft.com',
-'I07OPDFOAWEB2.partners.extranet.microsoft.com',
-'I07OPDFOAWEB3.partners.extranet.microsoft.com',
-'I07OPDBOAAPP1.partners.extranet.microsoft.com',
-'I07OPDBOAAPP2.partners.extranet.microsoft.com',
-'I07OPDBOAAPP3.partners.extranet.microsoft.com',
-'I07OPDBOAAPP4.partners.extranet.microsoft.com',
-'I07OPDBOAAPP5.partners.extranet.microsoft.com'
+'server1'
 )
 
 $CheckActive= {
