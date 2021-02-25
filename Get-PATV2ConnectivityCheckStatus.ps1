@@ -1,12 +1,5 @@
 ﻿$ServerList = (
-'I02BU2FWEBAWS01.partners.extranet.microsoft.com', 
-'I02BU2FWEBAWS02.partners.extranet.microsoft.com',
-'I02BU2BWEBAWS03.partners.extranet.microsoft.com', 
-'I02BU2BWEBAWS04.partners.extranet.microsoft.com', 
-'I02BU2BSVCAWS01.partners.extranet.microsoft.com', 
-'I02BU2BSVCAWS02.partners.extranet.microsoft.com', 
-'I02BU2BSQLAWS01.partners.extranet.microsoft.com', 
-'I02BU2BSQLAWS02.partners.extranet.microsoft.com'
+'server1'
 )
 
 $Run = {
