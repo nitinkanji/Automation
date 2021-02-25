@@ -1,5 +1,5 @@
 ﻿Import-Module E:\Automation\GeneralMonitoring\CompletedWork\Modules\ECPasswordMaintenance_8April17.psm1
-$dbServer ='nitinkg.fareast.corp.microsoft.com'
+$dbServer ='server1'
 Function ExecuteSqlQuery ($Query, $Server) { 
             Try
                                                                 {
