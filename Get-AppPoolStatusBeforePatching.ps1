@@ -2,7 +2,7 @@
 $servers = @(Type $ServerName)
 $flag = 1
 
-$Pass = "*************" | ConvertTo-SecureString -AsPlainText -Force; $Account='redmond\lpoaasvc'
+$Pass = "*************" | ConvertTo-SecureString -AsPlainText -Force; $Account='domain\account'
 $credential = [System.Management.Automation.PSCredential]::new($Account, $Pass)
 
 $DBServer ='i07oemsqldevops.northamerica.corp.microsoft.com'
