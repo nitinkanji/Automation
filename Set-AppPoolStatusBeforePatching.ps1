@@ -1,7 +1,7 @@
 ﻿param ([Parameter(Mandatory=$true)] [string] $ServerName)   
 $servers = @(Type $ServerName)
 
-$Pass = "**************" | ConvertTo-SecureString -AsPlainText -Force; $Account='redmond\lpoaasvc'
+$Pass = "**************" | ConvertTo-SecureString -AsPlainText -Force; $Account='domain\account'
 $credential = [System.Management.Automation.PSCredential]::new($Account, $Pass)
 $flag = 1; $DBServer = 'i07oemsqldevops.northamerica.corp.microsoft.com'
    
