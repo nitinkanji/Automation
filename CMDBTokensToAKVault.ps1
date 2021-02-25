@@ -1,4 +1,4 @@
-﻿$Vault = 'OEMHOFCMDBTokens'
+﻿$Vault = 'Tokens'
 $Accouts = Import-Csv "D:\Desktop\CMDBTokensHOF.csv"
 $AccountError=@()
 $VaultError=@()
