@@ -9,9 +9,9 @@ Param(
 )
 
 # Exaple --> Get these details from ATM
-#  $VipName = 'az_efl_OASVCPWUS2_80_vs' 
-#  $NetworkType = 'EFL' 
-#  $DataCenter = 'CO1' 
+#  $VipName = 'az_efl_12_80_vs' 
+#  $NetworkType = 'EWFL' 
+#  $DataCenter = 'CWO1' 
 #  $Area = 'AZ'
 
 $Val = wget -Uri https://atmmt/api/v1.0/ltm/vip/$($VipName)/stats/$($Area)/$($NetworkType)/$($DataCenter)  -UseDefaultCredentials | ConvertFrom-Json 
