@@ -1,6 +1,6 @@
 ﻿$Server = 'I07OPDFOASVC3.partners.extranet.microsoft.com'#$env:COMPUTERNAME
 
-$Pass = "***********" | ConvertTo-SecureString -AsPlainText -Force ; $Account='redmond\lpoaasvc'
+$Pass = "***********" | ConvertTo-SecureString -AsPlainText -Force ; $Account='domain\account'
 $credential = [System.Management.Automation.PSCredential]::new($Account, $Pass)
 
 $Interval = 2  #Interval in seconds between the samples
