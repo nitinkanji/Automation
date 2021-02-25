@@ -16,9 +16,9 @@
 #ALTER TABLE [dbo].[LocalGrpMembers] ADD  DEFAULT (getdate()) FOR [TimeStamp]
 #GO
 
-$Pass = "********" | ConvertTo-SecureString -AsPlainText -Force ; $Account='redmond\lpoaasvc'
+$Pass = "********" | ConvertTo-SecureString -AsPlainText -Force ; $Account='domain\account'
 $credential = [System.Management.Automation.PSCredential]::new($Account, $Pass)
-$DBServer = 'nitinkg.fareast.corp.microsoft.com'
+$DBServer = 'Server1'
 $Servers =  Get-Content D:\Servers.txt
 
 $servers | % {
