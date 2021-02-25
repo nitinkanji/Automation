@@ -27,7 +27,7 @@ ForEach($certificate in $certificates)
 
     }
     catch{
-        Write-Host -ForegroundColor Red "Error  : $($Error[0].Exception)"
+        Write-Host -ForegroundColor Red "Error  :  $($Error[0].Exception)"
     }
 
 }
