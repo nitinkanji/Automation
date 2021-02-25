@@ -2,7 +2,7 @@
 # Author : Nitin K. Gupta 
 #
 # Description : For better manageability\operation\maintenance support it is always good to have service accounts details including 
-# where it has been used in your target servers;  This script will help you to scan given servers list parallels (Multithreading) and 
+# where it has been used in your target servers;   This script will help you to scan given servers list parallels (Multithreading) and 
 # generate consolidated report with service account usage details in one go.
 #
 # Jus specify the servers list either through .txt file or directly in variable
