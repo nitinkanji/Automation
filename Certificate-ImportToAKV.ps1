@@ -33,7 +33,7 @@ ForEach($certificate in $certificates)
 
     }
         Write-Host -ForegroundColor Cyan "$($i). Failed to Migrate --> {$($certificate.Certificatename)} "
-        Write-Host -ForegroundColor Red "Error : $($Error[0].Exception)"
+        Write-Host -ForegroundColor Red "Error :  $($Error[0].Exception)"
     }
 
     $i+=1
