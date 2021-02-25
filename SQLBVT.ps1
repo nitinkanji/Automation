@@ -1,4 +1,4 @@
-﻿param ([Parameter(Mandatory=$true, Position=0, HelpMessage='Please provide the SQL Listiner Name')] [string] $ServerName)   
+﻿param ([Parameter(Mandatory=$true, Position=0, HelpMessage=' Please provide the SQL Listiner Name')] [string] $ServerName)   
 $servers = @(type $ServerName)
 $flag = 0
 
