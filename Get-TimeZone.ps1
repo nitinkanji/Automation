@@ -1,10 +1,8 @@
-﻿$Pass = "*********" | ConvertTo-SecureString -AsPlainText -Force ; $Account='redmond\lpoaasvc'
+﻿$Pass = "*********" | ConvertTo-SecureString -AsPlainText -Force ; $Account='domain\account'
 $credential = [System.Management.Automation.PSCredential]::new($Account, $Pass)
 
 $servers =(
-'I01OPDFWEBDOC01.partners.extranet.microsoft.com',
-'I01OPDFWEBDOC02.partners.extranet.microsoft.com',
-'I02OPDFWEBDOC01.partners.extranet.microsoft.com')
+'server1')
 
 $TIMEZONES = {
       $TIMEZONE =  [SYSTEM.TIMEZONE]::CURRENTTIMEZONE
