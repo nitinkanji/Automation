@@ -19,13 +19,11 @@
     else {Write-host "Web UI Site - Not found."}
 }
 
-$Pass = "*************" | ConvertTo-SecureString -AsPlainText -Force ; $Account='redmond\lpoaasvc'
+$Pass = "*************" | ConvertTo-SecureString -AsPlainText -Force ; $Account='domain\account'
 $credential = [System.Management.Automation.PSCredential]::new($Account, $Pass)
 
 $servers = (
-'I07OPDFOASVC1.partners.extranet.microsoft.com',
-'I07OPDFOASVC2.partners.extranet.microsoft.com',
-'I07OPDFOASVC2.partners.extranet.microsoft.com'
+'server1'
 )
 
 Foreach($server in $servers)
