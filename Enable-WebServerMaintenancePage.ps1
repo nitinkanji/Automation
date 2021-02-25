@@ -1,5 +1,5 @@
-﻿$DatabaseServer='i07oemsqldevops.northamerica.corp.microsoft.com'; $Database='OEMBCDR'; $LoggingTable = 'Operations'; $ErrorTable='Exceptions'
-$Pass = "************" | ConvertTo-SecureString -AsPlainText -Force ; $Account='redmond\lpoaasvc'
+﻿$DatabaseServer='server1'; $Database='OEMBCDR'; $LoggingTable = 'Operations'; $ErrorTable='Exceptions'
+$Pass = "************" | ConvertTo-SecureString -AsPlainText -Force ; $Account='domain\account'
 $credential = [System.Management.Automation.PSCredential]::new($Account, $Pass)
 
 Try
