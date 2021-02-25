@@ -1,4 +1,4 @@
-﻿ $accounts =@(Import-Csv C:\Users\nitinkg\Desktop\CertDemo.csv)
+﻿ $accounts =@(Import-Csv C:\Users\frf\Desktop\CertDemo.csv)
  $Detail =@()
 
  Function GenerateADPassword              {
