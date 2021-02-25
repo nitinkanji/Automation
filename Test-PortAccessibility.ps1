@@ -37,11 +37,7 @@
 
 
 $servers = (
-'I07OPDBOAAPP1.partners.extranet.microsoft.com', 
-'I04OPDBOAAPP2.partners.extranet.microsoft.com', 
-'I04OPDBOAAPP3.partners.extranet.microsoft.com', 
-'I04OPDBOAAPP4.partners.extranet.microsoft.com', 
-'I04OPDBOAAPP5.partners.extranet.microsoft.com'
+'Server1'
 )
 
 Foreach($server in $servers)
