@@ -2,7 +2,7 @@
 #Variable declearation
 [int]$DayToExpire = 60
 $Response=@()
-$Pass = "***********" | ConvertTo-SecureString -AsPlainText -Force; $Account='redmond\lpoaasvc'
+$Pass = "***********" | ConvertTo-SecureString -AsPlainText -Force; $Account='domain\account'
 $credential = [System.Management.Automation.PSCredential]::new($Account, $Pass)
 
 #Pulling Certificates
