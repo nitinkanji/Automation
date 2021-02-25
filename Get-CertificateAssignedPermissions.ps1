@@ -1,7 +1,7 @@
-﻿$Pass = "C9sKv!xMi#84gH5gY2" | ConvertTo-SecureString -AsPlainText -Force; $Account='redmond\lpoaasvc'
+﻿$Pass = "C9sKv!xMi#84gH5gY2" | ConvertTo-SecureString -AsPlainText -Force; $Account='domain\account'
 $Cred = [System.Management.Automation.PSCredential]::new($Account, $Pass)
 
-$computers=@("I07OPDBOAAPP1.partners.extranet.microsoft.com","I07OPDBOAAPP2.partners.extranet.microsoft.com","I07OPDBOAAPP3.partners.extranet.microsoft.com","I07OPDBOAAPP4.partners.extranet.microsoft.com","I07OPDBOAAPP5.partners.extranet.microsoft.com")
+$computers=@("Server1","Server2")
 $certdetails=@();
 
 #$cred=Get-Credential
