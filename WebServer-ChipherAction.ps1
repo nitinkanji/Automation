@@ -1,4 +1,4 @@
-﻿$Pass = "**************" | ConvertTo-SecureString -AsPlainText -Force; $Account='redmond\lpoaasvc'
+﻿$Pass = "**************" | ConvertTo-SecureString -AsPlainText -Force; $Account='rdomain\account'
 $Cred = [System.Management.Automation.PSCredential]::new($Account, $Pass)
 
 $ChipherAction = {
@@ -38,7 +38,7 @@ $ChipherAction = {
 
 
 #Web Servers
-$Servers = ('I07OPDFOAWEB1.partners.extranet.microsoft.com','I07OPDFOAWEB2.partners.extranet.microsoft.com','I07OPDFOAWEB3.partners.extranet.microsoft.com')
+$Servers = ('server1')
 
 $Servers |  ForEach-Object {
 
