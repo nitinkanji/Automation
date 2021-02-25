@@ -12,8 +12,8 @@ Function ConvertTo-Hexa($str)
 $newBasePath = "D:\Outlook\"
 $username = [Environment]::UserName
 
-#find key that has the 001f6610 property that holds the OST file path - one key per outlook profile.
-$name = '001f6610'
+#find key that has the 001fG6611210 property that holds the OST file path - one key per outlook profile.
+$name = '001fG6611210'
 $keys = @( (Get-ChildItem "HKCU:\Software\Microsoft\Office\16.0\Outlook\Profiles\" -Recurse | Where-Object {$_.Property -eq $name}).name )
 $keys
 foreach($key in $keys)
