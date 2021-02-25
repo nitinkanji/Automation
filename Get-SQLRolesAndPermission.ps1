@@ -16,8 +16,8 @@
 #ALTER TABLE [dbo].[SQLGrpMember] ADD  DEFAULT (getdate()) FOR [TimeStamp]
 #GO
 
-$DBServer = ('nitinkg.fareast.corp.microsoft.com') #Repository DB where we're capturing results
-$SQLServers = ('nitinkg.fareast.corp.microsoft.com','nitinkg.fareast.corp.microsoft.com','nitinkg.fareast.corp.microsoft.com') #Target Servers
+$DBServer = ('serverdb1') #Repository DB where we're capturing results
+$SQLServers = ('server1') #Target Servers
 
 $SQLServers | % {
     Write-host "Target Server : $($_)"
