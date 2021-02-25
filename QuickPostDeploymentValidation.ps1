@@ -1,10 +1,10 @@
 ﻿
-$Pass = "****************" | ConvertTo-SecureString -AsPlainText -Force; $Account='redmond\lpoaasvc'
+$Pass = "****************" | ConvertTo-SecureString -AsPlainText -Force; $Account='domain\account'
 $credential = [System.Management.Automation.PSCredential]::new($Account, $Pass)
 
 
 #Get App pool Status 
-$servers = ('I07OPDFOAWEB2.partners.extranet.microsoft.com','I07OPDFOAWEB3.partners.extranet.microsoft.com','I07OPDFOASVC2.partners.extranet.microsoft.com','I07OPDFOASVC3.partners.extranet.microsoft.com','I07OPDBOAAPP3.partners.extranet.microsoft.com','I07OPDBOAAPP4.partners.extranet.microsoft.com','I07OPDBOAAPP5.partners.extranet.microsoft.com')
+$servers = ('server1')
 
 Foreach($server in $servers)
 {
@@ -33,7 +33,7 @@ Foreach($server in $servers)
 
 
 #Update App Pool Password in case missing
-$servers = ('I07OPDFOAWEB2.partners.extranet.microsoft.com','I07OPDFOAWEB3.partners.extranet.microsoft.com')
+$servers = ('server1')
 Foreach($server in $servers)
 {
     Invoke-Command -ComputerName $server -ScriptBlock {
@@ -43,7 +43,7 @@ Foreach($server in $servers)
     
     foreach($applicationPool in $applicationPools)
     {
-        $applicationPool.processModel.userName = 'Northamerica\pdoaprm'
+        $applicationPool.processModel.userName = 'domain\account'
         $applicationPool.processModel.password = '***************'
         $applicationPool.processModel.identityType = 3
         $applicationPool | Set-Item
@@ -56,7 +56,7 @@ Foreach($server in $servers)
 
 #Service Validation
 
-$servers = ('I07OPDFOAWEB2.partners.extranet.microsoft.com','I07OPDFOAWEB3.partners.extranet.microsoft.com','I07OPDFOASVC2.partners.extranet.microsoft.com','I07OPDFOASVC3.partners.extranet.microsoft.com','I07OPDBOAAPP3.partners.extranet.microsoft.com','I07OPDBOAAPP4.partners.extranet.microsoft.com','I07OPDBOAAPP5.partners.extranet.microsoft.com')
+$servers = ('Server1')
 $Details=@()
 Foreach($server in $servers)
 {
