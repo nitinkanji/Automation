@@ -1,4 +1,4 @@
-﻿$Pass = "C9sKv!xMi#84gH5gY2" | ConvertTo-SecureString -AsPlainText -Force; $Account='redmond\lpoaasvc'
+﻿$Pass = "**********" | ConvertTo-SecureString -AsPlainText -Force; $Account='domain\account'
 $credential = [System.Management.Automation.PSCredential]::new($Account, $Pass)
 
 #Specify the Folder where permission need to Granted
@@ -57,10 +57,7 @@ $RemoveFileSharePermission = {
 }
 
 $HAWKDFSServers = (
-'i07opdbfilfsa1.partners.extranet.microsoft.com',
-'i07opdbfilfsa2.partners.extranet.microsoft.com',
-'i01opdbfilfsa1.partners.extranet.microsoft.com',
-'i01opdbfilfsa2.partners.extranet.microsoft.com'
+'Server1'
 )
 
 
