@@ -1,7 +1,7 @@
 ﻿param ([Parameter(Mandatory=$true, Position=0)][string] $ServerName)
 $Servers = @(Type $ServerName)
 
-$Pass = "******************" | ConvertTo-SecureString -AsPlainText -Force ; $Account='redmond\lpoaasvc'
+$Pass = "******************" | ConvertTo-SecureString -AsPlainText -Force ; $Account='domain\account'
 $credential = [System.Management.Automation.PSCredential]::new($Account, $Pass)
 
 $Drain = 
