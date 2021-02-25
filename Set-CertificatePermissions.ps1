@@ -1,7 +1,7 @@
-﻿$Pass = "C9sKv!xMi#84gH5gY2" | ConvertTo-SecureString -AsPlainText -Force; $Account='redmond\lpoaasvc'
+﻿$Pass = "*********" | ConvertTo-SecureString -AsPlainText -Force; $Account='domain\account'
 $Cred = [System.Management.Automation.PSCredential]::new($Account, $Pass)
 
-$computers=@("I07OPDFOAWEB1.partners.extranet.microsoft.com","I07OPDFOAWEB2.partners.extranet.microsoft.com","I07OPDFOAWEB3.partners.extranet.microsoft.com")
+$computers=@("Server1")
 
 #$cred=Get-Credential
 foreach($computer in $computers)
@@ -16,15 +16,7 @@ foreach($computer in $computers)
         # Make sure we work with the most recent cert 
         
      [System.Collections.Hashtable]$certCNs =@{
-            "oemoaclientprodust"="Northamerica\pdoacbr,Northamerica\pdoadoc,Northamerica\pdoaord,Northamerica\pdoapbr,Northamerica\pdoapng,Northamerica\pdospba,Northamerica\pdoaprd,Northamerica\pdoaprm,Northamerica\pdhkmss,Northamerica\pdhkbusn,Northamerica\pdhkrsi,Northamerica\pdoartn,NorthAmerica\pdhkrson,Partners\pdhkrev,Northamerica\pdoaful,Northamerica\pdoahwr,Northamerica\pdoaint";
-            "provisioningproddbencryptioncert"="Northamerica\pdoacbr,Northamerica\pdoadoc,Northamerica\pdoaord,Northamerica\pdoapbr,Northamerica\pdoapng,Northamerica\pdospba,Northamerica\pdoaprd,Northamerica\pdoaprm,Northamerica\pdhkmss,Northamerica\pdhkbusn,Northamerica\pdhkrsi,Northamerica\pdoartn,NorthAmerica\pdhkrson,Partners\pdhkrev,Northamerica\pdoaful,Northamerica\pdoahwr,Northamerica\pdoaint";
-            "prodoaappsts.gtm.corp.microsoft.com"="Northamerica\pdoacbr,Northamerica\pdoadoc,Northamerica\pdoaord,Northamerica\pdoapbr,Northamerica\pdoapng,Northamerica\pdospba,Northamerica\pdoaprd,Northamerica\pdoaprm,Northamerica\pdhkmss,Northamerica\pdhkbusn,Northamerica\pdhkrsi,Northamerica\pdoartn,NorthAmerica\pdhkrson,Partners\pdhkrev,Northamerica\pdoaful,Northamerica\pdoahwr,Northamerica\pdoaint";
-            "client.oemis.sls.phx.gbl"="Northamerica\pdoacbr,Northamerica\pdoadoc,Northamerica\pdoaord,Northamerica\pdoapbr,Northamerica\pdoapng,Northamerica\pdospba,Northamerica\pdoaprd,Northamerica\pdoaprm,Northamerica\pdhkmss,Northamerica\pdhkbusn,Northamerica\pdhkrsi,Northamerica\pdoartn,NorthAmerica\pdhkrson,Partners\pdhkrev,Northamerica\pdoaful,Northamerica\pdoahwr,Northamerica\pdoaint";
-            "OEM Agreementr Prod Web Service Account"="Northamerica\pdoacbr,Northamerica\pdoadoc,Northamerica\pdoaord,Northamerica\pdoapbr,Northamerica\pdoapng,Northamerica\pdospba,Northamerica\pdoaprd,Northamerica\pdoaprm,Northamerica\pdhkmss,Northamerica\pdhkbusn,Northamerica\pdhkrsi,Northamerica\pdoartn,NorthAmerica\pdhkrson,Partners\pdhkrev,Northamerica\pdoaful,Northamerica\pdoahwr,Northamerica\pdoaint";
-            "i07opdboaappv.partners.extranet.microsoft.com"="Northamerica\pdoacbr,Northamerica\pdoadoc,Northamerica\pdoaord,Northamerica\pdoapbr,Northamerica\pdoapng,Northamerica\pdospba,Northamerica\pdoaprd,Northamerica\pdoaprm,Northamerica\pdhkmss,Northamerica\pdhkbusn,Northamerica\pdhkrsi,Northamerica\pdoartn,NorthAmerica\pdhkrson,Partners\pdhkrev,Northamerica\pdoaful,Northamerica\pdoahwr,Northamerica\pdoaint";
-            "oemoaclientprodmcapi"="Northamerica\pdoacbr,Northamerica\pdoadoc,Northamerica\pdoaord,Northamerica\pdoapbr,Northamerica\pdoapng,Northamerica\pdospba,Northamerica\pdoaprd,Northamerica\pdoaprm,Northamerica\pdhkmss,Northamerica\pdhkbusn,Northamerica\pdhkrsi,Northamerica\pdoartn,NorthAmerica\pdhkrson,Partners\pdhkrev,Northamerica\pdoaful,Northamerica\pdoahwr,Northamerica\pdoaint";
-            "oemnosqlprod.partners.extranet.microsoft.com"="Northamerica\pdoacbr,Northamerica\pdoadoc,Northamerica\pdoaord,Northamerica\pdoapbr,Northamerica\pdoapng,Northamerica\pdospba,Northamerica\pdoaprd,Northamerica\pdoaprm,Northamerica\pdhkmss,Northamerica\pdhkbusn,Northamerica\pdhkrsi,Northamerica\pdoartn,NorthAmerica\pdhkrson,Partners\pdhkrev,Northamerica\pdoaful,Northamerica\pdoahwr,Northamerica\pdoaint"
-            "OEM Activation Service"="Northamerica\pdoacbr,Northamerica\pdoadoc,Northamerica\pdoaord,Northamerica\pdoapbr,Northamerica\pdoapng,Northamerica\pdospba,Northamerica\pdoaprd,Northamerica\pdoaprm,Northamerica\pdhkmss,Northamerica\pdhkbusn,Northamerica\pdhkrsi,Northamerica\pdoartn,NorthAmerica\pdhkrson,Partners\pdhkrev,Northamerica\pdoaful,Northamerica\pdoahwr,Northamerica\pdoaint"
+            "oemoaclientprodust"="domain\account1,domain\account2"
             }
         #[System.Collections.Hashtable]$certCNs = @{"microsoftoem.com"="northamerica\pdoaprm"} # Web Servers
 
