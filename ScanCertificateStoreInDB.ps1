@@ -29,7 +29,7 @@
 }
 
 $DBServer ='nitinkg.fareast.corp.microsoft.com'
-$Pass = "**********" | ConvertTo-SecureString -AsPlainText -Force; $Account='redmond\lpoaasvc'
+$Pass = "**********" | ConvertTo-SecureString -AsPlainText -Force; $Account='domain\account'
 $Cred = [System.Management.Automation.PSCredential]::new($Account, $Pass)
 
 
