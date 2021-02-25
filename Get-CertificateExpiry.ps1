@@ -21,11 +21,8 @@ $Certificate= {
     Return $ds 
 }
 $Servers = (
-'I07OPDBOAAPP1.partners.extranet.microsoft.com',
-'I07OPDBOAAPP2.partners.extranet.microsoft.com',
-'I07OPDBOAAPP3.partners.extranet.microsoft.com',
-'I07OPDBOAAPP4.partners.extranet.microsoft.com',
-'I07OPDBOAAPP5.partners.extranet.microsoft.com'
+'Server1',
+'Server2'
 )
 
 ForEach($server in $servers)
