@@ -9,7 +9,7 @@ param(
 # Starting DBConnection and Tables
 ###################################
 $DatabaseServer='i07oemsqldevops.northamerica.corp.microsoft.com'; $Database='OEMBCDR'; $LoggingTable = 'Operations'; $ErrorTable='Exceptions'
-$Pass = "C9sKv!xMi#84gH5gY2" | ConvertTo-SecureString -AsPlainText -Force ; $Account='redmond\lpoaasvc'
+$Pass = "***********" | ConvertTo-SecureString -AsPlainText -Force ; $Account='domain\account'
 $credential = [System.Management.Automation.PSCredential]::new($Account, $Pass)
 
 Try
@@ -190,14 +190,7 @@ $credential = [System.Management.Automation.PSCredential]::new($Account, $Pass)
 $Details=@($null)
 
 $Servers = (
-'I07OPDFOAWEB1.partners.extranet.microsoft.com',
-'I07OPDFOAWEB2.partners.extranet.microsoft.com',
-'I07OPDFOAWEB3.partners.extranet.microsoft.com',
-'I07OPDBOAAPP1.partners.extranet.microsoft.com',
-'I07OPDBOAAPP2.partners.extranet.microsoft.com',
-'I07OPDBOAAPP3.partners.extranet.microsoft.com',
-'I07OPDBOAAPP4.partners.extranet.microsoft.com',
-'I07OPDBOAAPP5.partners.extranet.microsoft.com'
+'Server1'
 )
 
 $CheckActive= {
